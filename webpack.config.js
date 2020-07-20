@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/javascripts/index.js',
   output:{
     path:path.resolve(__dirname, './dist'),
-    filename: 'bundle.js',
+    filename: 'javascripts/bundle.js',
   },
 
   module:{
@@ -18,7 +18,7 @@ module.exports = {
         loader:'babel-loader',
       },
       {
-        test:/\().scss|css)/,
+        test:/\.(scss|css)/,
         use: [
           {
             loader:MiniCssExtractPlugin.loader,
@@ -32,18 +32,37 @@ module.exports = {
         ],
       },
       {
-        test:/\.(png|jpg|jpeg)/,
-        options: {
-          esModule:false,
-          name:'images/[name].[ext]'
-        }
-      }
+        test: /\.png|\.jpg/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+              name: 'images/[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test:/\.pug/,
+        use:[
+          {
+            loader:'html-loader',
+          },
+          {
+            loader:'pug-html-loader',
+            options: {
+              pretty:true,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins:[
     new HtmlWebpackPlugin({
-      template:'./src/template/index.html',
-      filename:'./template/index.html',
+      template:'./src/template/index.pug',
+      filename:'index.html',
     }),
     new MiniCssExtractPlugin({
       filename: './stylesheets/main.css',
