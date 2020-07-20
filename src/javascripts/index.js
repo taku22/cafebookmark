@@ -1,1 +1,1 @@
-console.log('work');
+import '../stylesheets/main.scss';

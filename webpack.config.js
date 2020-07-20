@@ -18,7 +18,7 @@ module.exports = {
         loader:'babel-loader',
       },
       {
-        test:/\.(scss|css)/,
+        test:/\.(scss|css)$/,
         use: [
           {
             loader:MiniCssExtractPlugin.loader,
@@ -27,7 +27,7 @@ module.exports = {
             loader:'css-loader',
           },
           {
-            loader:'sass-loader,'
+            loader:'sass-loader',
           },
         ],
       },
@@ -60,12 +60,12 @@ module.exports = {
     ],
   },
   plugins:[
-    new HtmlWebpackPlugin({
-      template:'./src/template/index.pug',
-      filename:'index.html',
-    }),
     new MiniCssExtractPlugin({
       filename: './stylesheets/main.css',
+    }),
+    new HtmlWebpackPlugin({
+      template:'./src/template/archive.pug',
+      filename:'index.html',
     }),
   ],
 }
