@@ -1,12 +1,14 @@
 .archive {
   width:885px;
   height: 2000px;
-  background-color: blue;
   &__image {
     margin: 0 auto;
-    background-color: red;
     width: 750px;
     height: 300px;
+    img {
+      width: 750px;
+      height: 300px;
+    }
   }
 }
 

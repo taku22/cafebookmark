@@ -1,5 +1,57 @@
 .sidebar {
-  background-color: grey;
+  background-color: #5e9d93;
   width: 315px;
   height: 2000px;
+  &__ranking {
+    & .rankingTitle {
+      padding: 33px 0 0 54px;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+  }
+}
+
+.ranking__content {
+  text-align: center;
+  width: 233px;
+  height: 210px;
+  margin:0 0 20px 46px;
+  border: 1px solid #000;
+  & .content__title {
+    font-size: 1.9rem;
+  }
+}
+
+.content__discription {
+  display: flex;
+  & .discription__image {
+    padding: 8px 0 0 69px;
+    width:40px;
+    height: 32px;
+  }
+  & p {
+    padding-left: 17px;
+    font-size: 3.7rem;
+  }
+
+}
+
+.sidebar__relatedArchive {
+  margin: 0 auto;
+}
+
+.relatedArchive__title {
+  padding: 33px 0 0 54px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.reletedArchive__content {
+  margin: 0 auto;
+  width: 240px;
+  height: 180px;
+  & .content__title {
+    text-align: center;
+    font-size: 1.9rem;
+  }
 }
