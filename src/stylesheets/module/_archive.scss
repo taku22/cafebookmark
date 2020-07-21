@@ -1,0 +1,99 @@
+.archive {
+  width:885px;
+  height: 2000px;
+  background-color: blue;
+  &__image {
+    margin: 0 auto;
+    background-color: red;
+    width: 750px;
+    height: 300px;
+  }
+}
+
+.archiveWrapper {
+  width: 650px;
+  height: calc(100% - 300px);
+  margin: 0 auto;
+  background-color: #e0e0e0;
+  &__title h1 {
+    font-size: 3.5rem;
+  }
+  &__description {
+    display: flex;
+    font-size: 1.8rem;
+    & p {
+      padding-right: 5px;
+    }
+  }
+  &__content {
+    height: calc(100% - 300px);
+    padding-top: 27px;
+    font-size: 2.4rem;
+  }
+  &__footer {
+    width: 100%;
+    height: 160px;
+    padding-top: 33px;
+  }
+}
+
+.footer__snsShare {
+  padding-left:50px;
+  display: flex;
+  width: calc(100% - 50px);
+  height: 75px;
+}
+
+.snsShare__round {
+  margin-right: 75px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  &--twitter{
+    @extend .snsShare__round;
+    background-color: #00ACEE;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &--line{
+    @extend .snsShare__round;
+    background-color: #1dcd00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &--facebook{
+    @extend .snsShare__round;
+    background-color: #3B5998;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &--pinterest{
+    @extend .snsShare__round;
+    background-color: #BD081C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer__tag {
+  display: flex;
+  padding: 37px 0 0 44px;
+}
+
+.tag__container {
+  margin-right: 12px;
+  p {
+    font-size: 1.8rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding-right: 12px;
+  }
+}

@@ -13,32 +13,52 @@ html(lang="ja")
         a.siteTitle(href="#")
           img.siteTitle__title(src="../images/Cafebookmark_titletext.png")
       .header__hamburgerMenu
-    main.main
-      section.archive
-        .archice__image
-          img
-        .archive__title
-          h1
-        .archive__description
-          p ジャンル名
-          p 2020/08/01
-          p #タグ名
-        .archive__content
-        .archive__footer
-          .snsShare
-          .tag
-      .googleAdword
-      .latestArchive
-        .latestArchive__wrapper
-          img
-          p タイトル
-        .latestArchive__wrapper
-          img
-          p タイトル
-        .latestArchive__wrapper
-          img
-          p タイトル
+    .wrapper
+      main.main
+        .archive
+          .archive__image
+            img
+          .archiveWrapper
+            .archiveWrapper__title
+              h1 記事タイトル
+            .archiveWrapper__description
+              p ジャンル名
+              p 2020/08/01
+              p #タグ名
+            .archiveWrapper__content
+              p テキストテキストテキストテキストテキストテキスト
+              | テキストテキストテキストテキストテキストテキスト
+              | テキストテキストテキストテキストテキストテキスト
+              | テキストテキストテキストテキストテキストテキスト
+              | テキストテキストテキストテキストテキストテキスト
+            .archiveWrapper__footer
+              .footer__snsShare
+                .snsShare__round--twitter
+                  i.fab.fa-twitter.fa-3x
+                .snsShare__round--line
+                  i.fab.fa-line.fa-3x
+                .snsShare__round--facebook
+                  i.fab.fa-facebook-square.fa-3x
+                .snsShare__round--pinterest
+                  i.fab.fa-pinterest-square.fa-3x
+              .footer__tag
+                .tag__container
+                  p タグ
+                .tag__container
+                  p タグ
       aside.sidebar
         .sidebar__ranking
         .sidebar__related-archive
+    .googleAdword
+    .latestArchive
+      .latestArchive__wrapper
+        img
+        p タイトル
+      .latestArchive__wrapper
+        img
+        p タイトル
+      .latestArchive__wrapper
+        img
+        p タイトル
+
     foooter.footer
