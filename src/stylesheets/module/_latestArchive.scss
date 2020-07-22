@@ -1,7 +1,14 @@
 .latestArchive {
-  width: 775px;
-  height: 500px;
-  padding-left: 110px;
+  @include pc {
+    width:775px;
+    padding-left: 110px;
+
+  }
+  @include spxl {
+    width: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+  }
   &__title {
     margin-top:25px;
     p {
@@ -12,13 +19,30 @@
 
   &__wrapper {
     margin-top: 20px;
+    @include spxl {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include spsm {
+      width: 100%;
+    }
   }
   &__container {
     display: flex;
     margin-bottom: 25px;
+    img{
+      @include spsm {
+        width:150px;
+        height: 100px;
+      }
+    }
     p {
       font-size: 2.4rem;
       padding-left: 24px;
+      @include spsm {
+        font-size: 1.9rem;
+        padding-left: 16px;
+      }
     }
   }
 }

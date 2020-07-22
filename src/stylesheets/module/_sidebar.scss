@@ -1,8 +1,22 @@
 .sidebar {
-  background-color: #5e9d93;
   width: 315px;
-  height: 2000px;
-  &__ranking {
+
+  @include pc {
+    background-color: #5e9d93;
+
+  }
+  @include spxl {
+    background-color: #e0e0e0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__ranking--pconly {
+      @include pc {
+        display: block;
+      }
+      @include spxl {
+        display: none;
+      }
     & .rankingTitle {
       padding: 33px 0 0 54px;
       font-weight: bold;
@@ -13,8 +27,8 @@
 
 .ranking__content {
   text-align: center;
-  width: 233px;
-  height: 210px;
+  width: 240px;
+  height: 270px;
   margin:0 0 20px 46px;
   border: 1px solid #000;
   & .content__title {
@@ -33,29 +47,46 @@
     padding-left: 17px;
     font-size: 3.7rem;
   }
-
 }
 
 .sidebar__relatedArchive {
   margin: 0 auto;
-}
-
-.relatedArchive__title {
-  padding: 33px 0 0 54px;
-  font-weight: bold;
-  font-size: 3rem;
+  & .relatedArchive__title {
+    padding: 33px 0 0 54px;
+    font-weight: bold;
+    font-size: 3rem;
+    @include spxl {
+      padding:33px 0 0 0;
+    }
+  }
 }
 
 .reletedArchive__content {
   margin: 0 auto;
   width: 240px;
   height: 220px;
+  @include spxl {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  @include spsm {
+    height: 120px;
+  }
   img {
     width:240px;
     height: 160px;
+    @include spsm {
+      width:150px;
+      height: 100px;
+    }
   }
   & .content__title {
     text-align: center;
     font-size: 1.9rem;
+    @include spxl {
+      padding-left: 25px;
+    }
   }
 }

@@ -1,8 +1,17 @@
 .googleAdSense {
-  width: 815px;
-  height: 300px;
-  text-align: center;
-  margin-top: 50px;
+  &--pconly {
+    @include pc {
+    display: block;
+    width: 815px;
+    text-align: center;
+    margin-top: 50px;
+    }
+    @include spxl {
+      display: none;
+    }
+  }
+
+
   &__wrapper {
     margin: 0 auto;
   }
