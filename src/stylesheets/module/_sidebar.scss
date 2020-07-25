@@ -61,6 +61,11 @@
   }
 }
 
+.relatedArchive__wrapper {
+  width: 100%;
+  height: 600px;
+}
+
 .reletedArchive__content {
   margin: 0 auto;
   width: 240px;
@@ -68,18 +73,17 @@
   @include spxl {
     display: flex;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   @include spsm {
-    height: 120px;
+    height: 150px;
   }
   img {
     width:240px;
     height: 160px;
     @include spsm {
-      width:150px;
-      height: 100px;
+      width:50%;
     }
   }
   & .content__title {

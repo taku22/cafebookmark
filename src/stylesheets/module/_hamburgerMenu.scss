@@ -1,0 +1,49 @@
+ .hamburgerMenu{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin:12px 15px 0 0;
+  cursor: pointer;
+
+  &__menuLine01 {
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: #212d55;
+    transition: all 0.3s;
+    top:9px;
+  }
+
+  &__menuLine02 {
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: #212d55;
+    transition: all 0.3s;
+    top:17px;
+  }
+
+  &__menuLine03 {
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: #212d55;
+    transition: all 0.3s;
+    top:25px;
+  }
+
+}
+
+.hamburgerMenu__menuLine01--opened {
+  transform: rotate(45deg);
+  top:20px;
+}
+
+.hamburgerMenu__menuLine02--opened {
+  width: 0px;
+}
+.hamburgerMenu__menuLine03--opened {
+  transform: rotate(-45deg);
+  top:20px;
+}
+
