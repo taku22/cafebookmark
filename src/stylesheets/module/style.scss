@@ -19,12 +19,14 @@ body{
 }
 
 .wrapper {
-  margin: 50px auto 0;
   @include pc {
     width: 1200px;
+    margin: 50px auto 0;
+
   }
   @include spxl {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
