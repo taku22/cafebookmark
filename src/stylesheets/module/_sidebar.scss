@@ -1,10 +1,15 @@
 .sidebar {
-  width: 315px;
 
   @include pc {
+    width: 315px;
     background-color: #5e9d93;
-
   }
+
+  @include tab {
+    width:26%;
+    background-color: #5e9d93;
+  }
+
   @include spxl {
     background-color: #e0e0e0;
     width: 100%;
@@ -32,6 +37,9 @@
   margin:0 0 20px 46px;
   border: 1px solid #000;
   background-color: #fff;
+  @include tab {
+    margin: 0 15px 15px 25px;
+  }
   & .content__title {
     font-size: 1.9rem;
   }
@@ -70,15 +78,14 @@
 .reletedArchive__content {
   margin: 0 auto;
   width: 240px;
-  height: 220px;
   @include spxl {
     display: flex;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   @include spsm {
-    height: 150px;
+    height: 180px;
   }
   img {
     width:240px;

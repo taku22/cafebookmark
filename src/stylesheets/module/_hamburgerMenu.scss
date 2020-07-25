@@ -9,6 +9,10 @@
     margin: 30px 40px 0 0;
   }
 
+  @include tab {
+    margin: 20px 30px 0 0;
+  }
+
   @include spxl {
     margin: 12px 15px 0 0;
   }
@@ -27,6 +31,11 @@
 
     @include pc {
       width: 40px;
+      top:9px;
+    }
+
+    @include tab {
+      width: 30px;
       top:9px;
     }
 
@@ -52,6 +61,11 @@
       top:23px;
     }
 
+    @include tab {
+      width: 30px;
+      top:23px;
+    }
+
     @include spxl {
       width: 30px;
       top:17px;
@@ -70,6 +84,11 @@
     transition: all 0.3s;
     @include pc {
       width: 40px;
+      top:37px;
+    }
+
+    @include tab {
+      width: 30px;
       top:37px;
     }
 

@@ -4,6 +4,11 @@
     padding-left: 110px;
   }
 
+  @include tab {
+    width: 775px;
+    padding-left: 110px;
+  }
+
   @include spxl {
     width: 100%;
     padding-left: 0;
