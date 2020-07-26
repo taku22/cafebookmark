@@ -1,37 +1,22 @@
 .header {
+  position: fixed;
   display: flex;
   background-color: #5e9d93;
   width:100%;
   height: 100px;
+  z-index: 100;
 
-  @include spxl {
-    height: 60px;
+  @include pc {
+    margin-top: -150px;
   }
 
-  .snsLink {
-    cursor: pointer;
-    padding:0 20px 38px 25px;
+  @include tab {
+    margin-top: -150px;
+  }
 
-    @include spxl {
-      width: 39px;
-      height: 31px;
-      padding:0 19px 0 17px;
-    }
-
-    &__logo {
-      @include spxl{
-        width: 39px;
-        height: 31px;
-      }
-    }
-
-    &__text {
-      text-align: center;
-      font-size:2.4rem;
-      @include spxl {
-        font-size: 1.6rem;
-      }
-    }
+  @include spxl {
+    margin-top: -60px;
+    height: 60px;
   }
 
   &__siteTitle {

@@ -55,7 +55,11 @@
   &__title h1 {
     padding-top:42px;
     font-size: 3.5rem;
+    @include spxl {
+      padding-left: 10px;
+    }
     @include spsm {
+      padding-left: 10px;
       font-size: 2.4rem;
     }
   }
@@ -63,7 +67,12 @@
     display: flex;
     font-size: 1.8rem;
     font-weight: bold;
+
+    @include spxl {
+      padding-left: 10px;
+    }
     @include spsm {
+      padding-left: 10px;
       font-size: 1.6rem;
     }
     & p {
