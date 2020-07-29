@@ -84,14 +84,20 @@
     margin-top: 10px;
   }
 
+  @include spxl {
+    height: 180px;
+  }
+
   @include spsm {
     height: 180px;
   }
+
   img {
     width:240px;
     height: 160px;
     @include spsm {
       width:50%;
+      height: 33.3vw;
     }
   }
   & .content__title {
@@ -99,6 +105,10 @@
     font-size: 1.9rem;
     @include spxl {
       padding-left: 25px;
+    }
+    @include spsm {
+      padding-left: 5px;
+      font-size: 1.6rem;
     }
   }
 }

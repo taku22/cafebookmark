@@ -75,8 +75,27 @@
       padding-left: 10px;
       font-size: 1.6rem;
     }
-    & p {
-      padding:30px 5px 0 0;
+  }
+  &__seriseName {
+    padding-top:10px;
+    padding-right: 10px;
+  }
+
+  &__dataName {
+    padding-top: 10px;
+  }
+    &__tag {
+      p {
+        font-size: 1.6rem;
+        font-weight: bold;
+        @include pc {
+          padding:10px 5px 0 0;
+        }
+        @include tab {
+          padding:10px 5px 0 0;
+        }
+
+        padding:10px 5px 0 10px;
     }
   }
   &__content {
