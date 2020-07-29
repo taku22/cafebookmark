@@ -1,33 +1,6 @@
-doctype html
-html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title TEST
-  body
-    header.header
-      a.snsLink(href="#" role="button")
-        img.snsLink__logo(src="../images/Cafebookmark_logo.png")
-        p.snsLink__text SNS
-      .snsLink__menu--closed
-        .menu__wrapper
-          .menu__container
-            i.fab.fa-instagram-square.icon-size
-            p Instagram
-          .menu__container
-            i.fab.fa-twitter.icon-size
-            p Twitter
-          .menu__container
-            i.fab.fa-youtube.icon-size
-            p Youtube
-      .header__siteTitle
-        a.siteTitle(href="#")
-          img.siteTitle__title(src="../images/Cafebookmark_titletext.png")
-      .hamburgerMenu
-        span.hamburgerMenu__menuLine01
-        span.hamburgerMenu__menuLine02
-        span.hamburgerMenu__menuLine03
-    .wrapper
+extends _header.pug
+block content
+  .wrapper
       .container
         main.main
           .archive
@@ -78,39 +51,7 @@ html(lang="ja")
                     p タグ
                   .tag__container
                     p タグ
-        aside.sidebar
-          .sidebar__ranking--pconly
-            p.rankingTitle ランキング
-            .ranking__content
-              .content__discription
-                img.discription__image(src="../images/Cafebookmark_logo.png")
-                p 1
-              img.content__image(src="https://placehold.jp/240x160.png")
-              p.content__title タイトル
-            .ranking__content
-              .content__discription
-                img.discription__image(src="../images/Cafebookmark_logo.png")
-                p 2
-              img.content__image(src="https://placehold.jp/240x160.png")
-              p.content__title タイトル
-            .ranking__content
-              .content__discription
-                img.discription__image(src="../images/Cafebookmark_logo.png")
-                p 3
-              img.content__image(src="https://placehold.jp/240x160.png")
-              p.content__title タイトル
-          .sidebar__relatedArchive
-            p.relatedArchive__title 関連記事
-          .relatedArchive__wrapper
-            .reletedArchive__content
-              img(src="../images/natumesouseki.jpg")
-              p.content__title 夏目漱石の「こころ」に迫る
-            .reletedArchive__content
-              img(src="../images/zixyubixyougennkintetu.jpeg")
-              p.content__title 書評「銃・病原菌・鉄」
-            .reletedArchive__content
-              img(src="https://placehold.jp/240x160.png")
-              p.content__title タイトル
+        include _sidebar.pug
       .googleAdSense--pconly
         .googleAdSense__wrapper
           img(src="https://placehold.jp/300x250.png")
@@ -127,7 +68,4 @@ html(lang="ja")
           .latestArchive__container
             img(src="https://placehold.jp/240x160.png")
             p タイトル
-
-    footer.footer
-      .footer__text
-        small &copy; 2020 intys
+      include _footer.pug
