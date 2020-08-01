@@ -1,5 +1,56 @@
 extends _header.pug
 block content
-  main.wrapper
-    include _sidebar.pug
+  .wrapper
+    .container
+      main.tagPage
+        .tagPage__tagName
+          p ジャンル名
+        .tagPage__wrapper
+          .tagPage__content
+            .content__img
+              img(src="https://placehold.jp/960x540.png")
+            .content__title
+              h2 タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+            .content__data
+              p 2020/7/24
+          .tagPage__content
+            .content__img
+              img(src="https://placehold.jp/960x540.png")
+            .content__title
+              h2 タイトルタイトル
+            .content__data
+              p 2020/7/24
+          .tagPage__content
+            .content__img
+              img(src="https://placehold.jp/960x540.png")
+            .content__title
+              h2 タイトルタイトル
+            .content__data
+              p 2020/7/24
+          .tagPage__content
+            .content__img
+              img(src="https://placehold.jp/960x540.png")
+            .content__title
+              h2 タイトルタイトル
+            .content__data
+              p 2020/7/24
+          .tagPage__content
+            .content__img
+              img(src="https://placehold.jp/960x540.png")
+            .content__title
+              h2 タイトルタイトル
+            .content__data
+              p 2020/7/24
+        .pagination
+          ul.pagination__group
+            li
+              a(href="#") 1
+            li
+              a(href="#") 2
+            li
+              a(href="#") 3
+            li
+              a(href="#") NEXT
+
+      include _sidebar.pug
   include _footer.pug

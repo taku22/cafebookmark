@@ -2,11 +2,13 @@
 
   @include pc {
     width: 315px;
+    height: 100%;
     background-color: #5e9d93;
   }
 
   @include tab {
     width:26%;
+    height: 100%;
     background-color: #5e9d93;
   }
 
@@ -73,11 +75,20 @@
 .relatedArchive__wrapper {
   width: 100%;
   height: 600px;
+  @include pc {
+    padding-bottom:50px;
+  }
+  @include tab {
+    padding-bottom: 50px;
+  }
 }
 
 .reletedArchive__content {
   margin: 0 auto;
   width: 240px;
+  @include pc {
+    margin-top: 15px;
+  }
   @include spxl {
     display: flex;
     width: 100%;
