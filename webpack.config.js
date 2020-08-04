@@ -64,6 +64,10 @@ module.exports = {
       filename: './stylesheets/main.css',
     }),
     new HtmlWebpackPlugin({
+      template:'./src/template/top.pug',
+      filename:'top.html',
+    }),
+    new HtmlWebpackPlugin({
       template:'./src/template/tag.pug',
       filename:'tag.html',
     }),

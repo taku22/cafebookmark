@@ -1,0 +1,10 @@
+.carousel {
+  width:780px;
+  height: 400px;
+  background-color: #00f;
+  &__container {
+    width: 780px;
+    height: 370px;
+    background-color: red;
+  }
+}
